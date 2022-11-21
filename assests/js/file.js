@@ -123,16 +123,16 @@ document.querySelector('#table10').addEventListener('click', event => {
     if (event.target.className == 'table10_block') {
         // меняем значение ячейки
         event.target.textContent = prompt('Значение ячекйки', 'Cell');
-    }
-})
+    };
+});
 
 function send_form_table() {
     // инцилизируем переменные
-    let table = document.getElementById('10')
-    let name = table.name.value
-    let suname = table.suname.value
+    let table = document.getElementById('10');
+    let name = table.name.value;
+    let suname = table.suname.value;
     // добавляем к таблице новую ячейку
-    document.querySelector('#table10').insertAdjacentHTML('beforeend', `<tr> <td class="table10_td"><div class="table10_block">${name}</div></td>  <td class="table10_td"><div class="table10_block">${suname}</div></td></tr>`)
-}
+    document.querySelector('#table10').insertAdjacentHTML('beforeend', `<tr> <td class="table10_td"><div class="table10_block">${name}</div></td>  <td class="table10_td"><div class="table10_block">${suname}</div></td></tr>`);
+};
 
 
