@@ -86,13 +86,15 @@ for (let i of document.getElementsByTagName('a')) {
 };
 
 // задание 7
-// забираем начальный текст у элемента
-let text = document.getElementById('7').textContent;
-// анулируем значение тега
-document.getElementById('7').textContent = '';
+// все абзацы
+let text = document.getElementsByClassName('7');
+
 for (let i of text) {
-    // добавляем в контент тега число в квадрате 
-    document.getElementById('7').textContent += Number(i) ** 2;
+    // добавляем событие click
+    i.addEventListener('click', event => {
+        // увеличиваем значение в кавадрат
+        event.target.textContent = Number(event.target.textContent) ** 2
+    })
 };
 
 // счет нажатий
@@ -134,5 +136,4 @@ function send_form_table() {
     // добавляем к таблице новую ячейку
     document.querySelector('#table10').insertAdjacentHTML('beforeend', `<tr> <td class="table10_td"><div class="table10_block">${name}</div></td>  <td class="table10_td"><div class="table10_block">${suname}</div></td></tr>`);
 };
-
 
