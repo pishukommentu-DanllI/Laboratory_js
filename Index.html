@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная_js</title>
+</head>
+<body>
+    <!-- создаем кнопку и добавляем обрабочтик событий task_1()-->
+    <button onclick="task_1()" id="1">Click</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad itaque et iure rerum. Totam, eveniet saepe alias quis iusto nam illo nulla quasi dolores odit reiciendis ratione harum facilis laudantium, ad tempora tempore repudiandae labore possimus dignissimos, quas nemo! Deserunt, facilis. Dicta officia quasi, neque illum quisquam qui ipsa, assumenda laudantium, nesciunt nulla reiciendis rem non est maxime repellendus fugiat magnam tempora voluptates ad provident asperiores in natus. Quidem, temporibus maxime. Impedit id vel enim eligendi quia nulla corporis sequi animi expedita nihil consectetur at soluta aspernatur odio rerum, suscipit sint harum delectus provident et aut aliquid quae explicabo? Minima ratione soluta quis illum. Veritatis ea omnis labore rerum nemo nihil perferendis deleniti, quae quas error iusto atque recusandae vitae explicabo dolore vero ex totam distinctio rem architecto porro, dolores sequi nobis quia? Nisi odio eveniet laudantium consectetur corrupti molestias eligendi officia doloremque, culpa ullam voluptates ad maxime laboriosam. Perferendis, officiis, id magni inventore nulla est expedita reprehenderit nihil explicabo voluptates placeat iste similique maiores facilis dicta nam, repellendus soluta! Nostrum blanditiis cumque ullam temporibus ipsum? Illum fuga deserunt officia nam et provident. Amet in blanditiis quidem ex nam veniam facilis iste quo, rem fuga aut impedit minus laudantium maxime ad dolorem dignissimos aliquid accusamus soluta! Laudantium iste id qui expedita non enim natus hic itaque corrupti maiores consectetur, quos sequi sit quisquam perferendis eos ab tenetur vitae labore reprehenderit? Delectus quas nemo, ipsam a doloribus ab reiciendis omnis ratione eum animi repellendus, rerum nulla fugit possimus quam maiores! Odio tenetur, esse, sequi illum voluptatem fugiat, omnis voluptatibus aliquam consequatur ad vero. Similique adipisci tempore exercitationem nam minus! Est, laboriosam incidunt? Ratione consectetur deserunt culpa? Nisi ratione dolorem voluptates error praesentium eos pariatur quidem laudantium quos doloremque dolorum obcaecati corrupti eaque perferendis iure, voluptas incidunt ab? Minus enim sequi, similique quos illo id doloremque! Quo quae illum officia tempore sapiente corrupti tempora impedit natus, soluta officiis laborum nisi dicta consequuntur culpa a iusto deleniti quia delectus sequi pariatur veniam nulla! Ea eos, autem asperiores rerum suscipit voluptates quis voluptatem assumenda similique sed reprehenderit fugit rem sint. Rerum aliquid asperiores nostrum deserunt, consequatur dolor amet voluptatum perspiciatis quos rem quia ab tenetur consectetur molestiae, blanditiis fugiat nisi adipisci illo repudiandae molestias. Cupiditate architecto fugiat similique eligendi delectus cum esse beatae, unde omnis aut exercitationem nam quo perferendis facilis possimus veniam quia assumenda? Libero aperiam iusto nobis voluptates cupiditate temporibus unde dolor praesentium officiis omnis. Esse rem, consequatur quasi ad vitae magnam laudantium ex soluta reiciendis non quae, expedita cum. Fugiat sunt nam minima rerum! Officia eligendi provident soluta nostrum molestias culpa alias vero perferendis iste, deserunt ratione, facilis quisquam, rem sit. Officia aspernatur vero, nihil incidunt ipsum cupiditate repellat repudiandae amet, nostrum itaque ullam delectus labore asperiores est minus sint eveniet esse, id perferendis provident accusantium in deserunt sunt. Exercitationem iusto necessitatibus maiores libero repellendus vitae perferendis! Ut libero, officia, ex, culpa optio consequatur nisi dignissimos corporis perspiciatis neque accusamus recusandae? Dolores, ipsam sit. Odit, iste. Laudantium corrupti laborum quia? Officiis.</p>
+    
+    <!-- создаем кнопку и навешиваем обработчик событие при собитие click -->
+    <button onclick="task_2(this)">Click</button>
+
+
+    <!-- создаем форму с 6 input -->
+    <form id="form" onsubmit="return false">
+        <input type="number">
+        <input type="number">
+        <input type="number">
+        <input type="number">
+        <input type="number">
+        <input type="number">
+        <!-- создаем кнопку и запрещаем обнавлять страницу -->
+        <button onclick="task_3();return false">Click</button>
+    </form>
+
+    <!-- задание 4 -->
+    <select id="4">
+        <!-- создаем select с option в которых расположенны города -->
+        <option id="a">a</option>
+        <option id="b">b</option>
+        <option id="c">c</option>
+    </select>
+
+
+    <!-- задание 5 -->
+    <ol id="5">
+        <!-- создаем ol с li -->
+        <li>One</li>
+    </ol>
+
+    <!-- задание 6 -->
+    <!-- создается ссылка -->
+    <a href="ссылка">ССылка</a>
+    <!-- задание  7 -->
+    <!-- создается абзац с цифрыми -->
+    <p id="7">1234567</p>
+
+    <!-- заадние 8-->
+    <!-- создается кнопка с обработчиком task_8() -->
+    <button id="8" onclick="task_8(this)">0</button>
+
+    <!-- задание 9-->
+    <!-- создается ul с id 9 внутри которого li -->
+    <ul id="9">
+        <li>
+            test
+        </li>
+        <li>
+            9
+        </li>
+    </ul>
+    <!-- кнопка для добавляение в ul с обработчиком thask_9() -->
+    <button onclick="task_9()">Click</button>
+
+
+    <!-- задание 10 -->
+    <!-- создается таблица с данными -->
+    <table id="table10" border="1">
+        <tr>
+            <td class="table10_td">
+                <div class="table10_block">
+                    Имя
+                </div>
+            </td>
+            <td class="table10_td">
+                <div class="table10_block">
+                    Фамилия
+                </div>
+            </td>
+        </tr>
+
+    </table>
+    <br>
+    <!-- форма для занесение данных в табличку -->
+    <form id="10" onsubmit="return false">
+        <!-- необходимые input -->
+        <input type="text" value="Имя" name="name">
+        <input value="Фамилия" name="suname">
+        <!-- кнопка для отправки формы -->
+        <button type="submit" value="Submit" onclick="send_form_table()"> Записать</button>
+    </form>
+
+    <script src="./assests/js/file.js"></script>
+</body>
+</html>
