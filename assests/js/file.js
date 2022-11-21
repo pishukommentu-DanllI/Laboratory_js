@@ -12,7 +12,7 @@ function task_1() {
 function task_2() {
     //забираем высоту уже прокрученной области у основного окна с помощью метода pageYOffset
     if (window.pageYOffset > 0) {
-        console.log('Есть');
+        alert('есть');
     };
 };
 
